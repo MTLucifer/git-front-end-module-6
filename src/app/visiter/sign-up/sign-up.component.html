@@ -18,8 +18,8 @@
                 <i class="fa fa-twitter"></i>
               </a>
             </div>
-            <!--            novalidate [formGroup]="createUserForm" (ngSubmit)="createUser()"-->
-            <form style="border-color: white">
+
+            <form style="border-color: white" [formGroup]="createUserForm" (ngSubmit)="createUser()">
               <label for="validationCustom03">Username</label>
               <div class="input-group form-group-no-border">
                 <div class="input-group-prepend">
@@ -57,7 +57,7 @@
                                                     <i class="nc-icon nc-key-25"></i>
                                                 </span>
                 </div>
-                <input type="text" class="form-control" placeholder="Re-Password" id="validationCustom04" required>
+                <input type="password" class="form-control" placeholder="Re-Password" id="validationCustom04" required>
                 <div class="invalid-feedback">
                   Please re-enter your password.
                 </div>
@@ -90,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="footer register-footer text-center">
+      <div style="margin-top: 30px" class="footer register-footer text-center">
         <h6>&copy;Made with 3000 <i class="fa fa-heart heart"></i> by Avengers</h6>
       </div>
     </div>
